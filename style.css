@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: linear-gradient(45deg,#fbda61,#ff5acd);
+}
+
+  .card{
+
+    position: relative;
+    width: 350px;
+    height: 190px;
+   
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.card:hover{
+    height: 300px;
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card:hover .imgBx{
+    width: 180px;
+    height: 180px;
+}
+.card:hover {
+    width: 300px;
+    height: 300px;
+}
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 39px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(125px);
+}
+.card:hover .content .details{
+
+    transform: translate(0px);
+}
+.card .content .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.card .content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+
+}
+.card .content .details .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card .content .details button{
+    padding: 7px 4px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    cursor: pointer;
+}
+p{
+   padding-top: 10px;
+} 
